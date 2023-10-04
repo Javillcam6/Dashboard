@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --color-light: #ffffff;
+    --color-medium: #D9D9D9;
+    --color-green: #26C823;
+    --color-red: #FF0000;
+    --color-dark: #000;
+  
+    /* BACKGROUNDS  */
+  
+    --bg-color-light: #ffffff;
+    --bg-color-medium: #F2F2F6;
+    --bg-color-dark: #03CF83;
+    --bg-color-darker: #0D1F4B;
+  }
+  
+  body {
+    background-color: var(--bg-color-medium);
+  }
+  
+  header {
+    background-color: var(--bg-color-darker);
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+  }
+  
+  .logo {
+    margin: 0.8rem;
+  }
+  
+  .logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  
+  }
+  
+  .usuario {
+    color: var(--bg-color-light);
+    text-align: end;
+    align-self: center;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr -webkit-min-content;
+    grid-template-columns: 1fr min-content;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  
+  .user-info {
+    align-self: center;
+  }
+  
+  .usuario span {
+    color: var(--color-medium);
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .foto img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  
+  .main-section {
+    display: grid;
+  }
+ .side .imgIcon{
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+  }
+  .side {
+    background-color: var(--bg-color-darker);
+    color: var(--bg-color-light);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    font-size: 1.4rem;
+    /* grid-row: 4 / 5; */
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    /* font-size: 1.8rem; */
+    font-size: 1rem;
+  }
+  
+  .data-boxes {
+    background-color: var(--bg-color-light);
+    /* width: 23rem; */
+    width: 15rem;
+    height: 25rem;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    padding: 1.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    row-gap: 1rem;
+  }
+  
+  .data {
+    background-color: var(--bg-color-darker);
+    /* width: 20rem; */
+    width: 12rem;
+    height: 3.3rem;
+    color: var(--color-light);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.345);
+  }
+  
+  .data .name {
+    color: var(--color-medium);
+  }
+  
+  .data .day-change-negatv {
+    color: var(--color-red);
+  }
+  
+  .day-change-positve {
+    color: var(--color-green);
+  }
+  
+  .chart {
+    background-color: var(--bg-color-dark);
+    /* width: 23rem; */
+    width: 15rem;
+    height: 25rem;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  @media screen and (min-width: 360px) {
+  
+  h1 {
+    font-size: 1.8rem;
+   }
+  
+   
+  .data-boxes {
+    width: 20rem;
+  }
+  
+  .data {
+    width: 17rem;
+  }
+  
+  .chart {
+    width: 20rem;
+  }
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 2rem;
+     }
+    
+     
+    .data-boxes {
+      width: 30rem;
+    }
+    
+    .data {
+      width: 26rem;
+    }
+    
+    .chart {
+      width: 30rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .main-section {
+      grid-template-columns: 7.1rem 1fr;
+    }
+  
+    .side {
+      background-color: var(--bg-color-medium);
+      border-right: 1px solid var(--color-medium);
+      grid-column: 1 / 2;
+      color: var(--bg-color-darker);
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: -webkit-min-content -webkit-min-content 1fr;
+      grid-template-rows: min-content min-content 1fr;
+      row-gap: 3rem;
+      height: 90vh;
+    }
+  
+    .settings-icon {
+      align-self: flex-end;
+    }
+  
+    .main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
+      align-items: center;
+      align-content: center;
+    }
+  
+    h1 {
+      grid-column: 1 / -1;
+      margin-top: 3rem;
+    }
+  
+    .data-boxes {
+      width: 23rem;
+    }
+    
+    .data {
+      width: 20rem;
+    }
+    
+    .chart {
+      width: 23rem;
+    }
+  
