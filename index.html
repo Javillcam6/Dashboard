@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chart.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"  crossorigin="anonymous">
   <title>Dashboard</title>
 </head>
@@ -25,8 +26,7 @@
 
   <section class="main-section">
     <article class="side">
-      <img class="imgIcon" src="./img/SVG img/tinywow_icons8-candelabros-50_36241394.svg" alt="graphic">
-      <!-- <i class="fa-solid fa-grip-lines-vertical"></i> -->
+      <i class="fa fa-line-chart" aria-hidden="true"></i>
       <i class="fa-regular fa-newspaper"></i>
       <i class="fa-solid fa-gear settings-icon"></i>
     </article>
@@ -90,12 +90,38 @@
     </article>
 
     <article>
-      <div class="chart"></div>
+      <div class="chartContainer">
+        <canvas id="chartData"></canvas>
+    </div>
     </article>
 
   </div>
   </section>
 
-  <script src="./index.js"></script>
+<!-- ------------------------------------------------------------------------------------- -->
+<div class="chartContainer1">
+    <canvas id="appleChart"></canvas>
+</div>
+
+
+
+<div class="cardContainer">
+    <canvas id="cardData"></canvas>
+</div>
+
+
+
+<div id="containerchart"></div>
+<div id="containerchart1"></div>
+<div id="containerchart2"></div>
+<div id="containercard"></div>
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="./src/JS/Msft.js"></script>
+  <script src="./src/JS/Appel.js"></script>
+  <script src="./src/JS/card.js"></script>
+  <script src="./src/JS/index.js"></script>
 </body>
 </html>

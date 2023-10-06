@@ -72,11 +72,6 @@
   .main-section {
     display: grid;
   }
- .side .imgIcon{
-    width: 25px;
-    height: 25px;
-    margin-left: 30px;
-  }
   .side {
     background-color: var(--bg-color-darker);
     color: var(--bg-color-light);
@@ -231,4 +226,4 @@
     .chart {
       width: 23rem;
     }
-  
+  }
