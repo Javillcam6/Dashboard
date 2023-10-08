@@ -91,6 +91,10 @@ h1 {
   font-size: 1rem;
   color: var(--bg-color-darke);
 }
+.infoJavken {
+  font-size: 20px;
+  font-weight: 400;
+}
 
 .data-boxes {
   background-color: var(--bg-color-light);
